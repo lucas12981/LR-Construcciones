@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR Construcciones | El Partido de la Costa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div id="carousel-container" class="absolute inset-0 w-full h-full flex">
+            <div class="carousel-slide absolute inset-0 w-full h-full bg-cover bg-center opacity-100 transition-opacity duration-1000" 
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80');">
+            </div>
+            <div class="carousel-slide absolute inset-0 w-full h-full bg-cover bg-center opacity-0 transition-opacity duration-1000" 
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');">
+            </div>
+            <div class="carousel-slide absolute inset-0 w-full h-full bg-cover bg-center opacity-0 transition-opacity duration-1000" 
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1920&q=80');">
+            </div>
+        </div>
+
+        <nav class="absolute top-0 left-0 w-full z-20 px-6 py-6 md:px-12 flex justify-between items-center bg-gradient-to-b from-black/60 to-transparent">
+            <div class="text-white font-bold text-xl md:text-2xl tracking-wider">LR CONSTRUCCIONES</div>
+            <div class="hidden md:flex space-x-8 text-white font-medium text-sm tracking-wide">
+                <a href="#inicio" class="hover:text-amber-500 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-amber-500 transition-colors">Servicios</a>
+                <a href="#proyectos" class="hover:text-amber-500 transition-colors">Proyectos</a>
+                <a href="#testimonios" class="hover:text-amber-500 transition-colors">Testimonios</a>
+                <a href="#contacto" class="hover:text-amber-500 transition-colors">Contacto</a>
+            </div>
+        </nav>
+
+        <div id="inicio" class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-12">
+            <span class="inline-block bg-amber-500 text-black font-semibold text-xs uppercase tracking-widest px-3 py-1 rounded mb-4">Calidad & Confianza</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                LR Construcciones
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+                Construcciones en general, refacciones y remodelaciones. Especialistas en colocación de porcelanatos y entrega de propiedades llave en mano.
+            </p>
+            <div class="bg-black/40 backdrop-blur-md border border-white/10 p-5 rounded-xl max-w-xl mx-auto mb-8">
+                <p class="text-amber-400 font-medium text-md tracking-wide mb-1">
+                    <i class="fa-solid fa-location-dot mr-2"></i>Trabajamos en todo el Partido de la Costa
+                </p>
+                <p class="text-white text-sm">Pedinos tu presupuesto sin cargo hoy mismo.</p>
+            </div>
+            <a href="#contacto" class="inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 tracking-wide text-sm uppercase">
+                Pedir Presupuesto Sin Cargo
+            </a>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white/50 text-xs tracking-widest uppercase animate-bounce flex flex-col items-center">
+            <span class="mb-2">Explorar</span>
+            <i class="fa-solid fa-chevron-down text-sm"></i>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-24 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-2">Lo que hacemos</h2>
+                <p class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Nuestras Especialidades</p>
+                <div class="w-12 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl mb-6">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Construcción General</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Llevamos a cabo obras desde los cimientos, garantizando solidez estructural y excelencia constructiva en cada etapa de la edificación.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl mb-6">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Refacciones & Remodelaciones</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Transformamos y modernizamos tus ambientes viejos o deteriorados, adaptándolos por completo a tus requerimientos estéticos y funcionales.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl mb-6">
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Colocación de Porcelanatos</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mano de obra ultra detallista para revestimientos y pisos. Logramos terminaciones perfectas, alineadas y niveladas milimétricamente.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 p-8 md:p-12 bg-gray-900 rounded-3xl text-white flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-xl">
+                    <span class="text-amber-500 font-semibold text-xs uppercase tracking-widest">El servicio más elegido</span>
+                    <h3 class="text-2xl md:text-3xl font-bold mt-2 mb-4">Propiedades Llave en Mano</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Nos encargamos de todo: desde los planos iniciales y la compra de materiales hasta las terminaciones más finas. Te entregamos tu propiedad lista para mudarte y disfrutar de inmediato, sin dolores de cabeza.</p>
+                </div>
+                <a href="#contacto" class="whitespace-nowrap bg-white hover:bg-amber-500 hover:text-black text-gray-900 font-semibold px-6 py-4 rounded-xl transition-all text-sm uppercase tracking-wide">
+                    Consultar servicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-24 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-2">Portfolio</h2>
+                <p class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Algunos de Nuestros Proyectos</p>
+                <div class="w-12 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Obra en La Costa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-white text-gray-900 text-xs font-semibold px-4 py-2 rounded-full shadow">Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-xs font-semibold uppercase tracking-wider">Obra Nueva</span>
+                        <h4 class="text-lg font-bold text-gray-900 mt-1 mb-2">Casa Moderna Llave en Mano</h4>
+                        <p class="text-gray-500 text-xs"><i class="fa-solid fa-location-dot mr-1"></i> Costa del Este</p>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" alt="Porcelanato" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-white text-gray-900 text-xs font-semibold px-4 py-2 rounded-full shadow">Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-xs font-semibold uppercase tracking-wider">Revestimientos</span>
+                        <h4 class="text-lg font-bold text-gray-900 mt-1 mb-2">Colocación de Porcelanato en Living</h4>
+                        <p class="text-gray-500 text-xs"><i class="fa-solid fa-location-dot mr-1"></i> San Bernardo</p>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80" alt="Cocina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-white text-gray-900 text-xs font-semibold px-4 py-2 rounded-full shadow">Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-amber-600 text-xs font-semibold uppercase tracking-wider">Remodelación</span>
+                        <h4 class="text-lg font-bold text-gray-900 mt-1 mb-2">Refacción Completa de Cocina</h4>
+                        <p class="text-gray-500 text-xs"><i class="fa-solid fa-location-dot mr-1"></i> Mar del Tuyú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-24 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-2">Opiniones</h2>
+                <p class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">La Satisfacción de Nuestros Clientes</p>
+                <div class="w-12 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                            "Excelente experiencia con LR Construcciones. Remodelaron nuestra casa en San Bernardo a tiempo y con un nivel de detalle increíble en la colocación del porcelanato. Muy profesionales."
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-sm">Carlos M.</p>
+                        <p class="text-gray-400 text-xs">Propietario en San Bernardo</p>
+                    </div>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                            "Los contratamos para un proyecto llave en mano en Costa del Este y superaron las expectativas. Te entregan la propiedad lista para habitar, sin dolores de cabeza. Totalmente recomendados."
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-sm">Valentina R.</p>
+                        <p class="text-gray-400 text-xs">Inversionista en Costa del Este</p>
+                    </div>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                            "Hicieron una refacción completa en mi local comercial. El presupuesto sin cargo fue exacto y cumplieron con cada fase del trabajo. Da gusto trabajar con gente tan seria en La Costa."
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-sm">Jorge D.</p>
+                        <p class="text-gray-400 text-xs">Comerciante en Mar del Tuyú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-gray-900 text-white pt-24 pb-12 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-16 border-b border-gray-800">
+                <div>
+                    <span class="text-amber-500 font-bold text-xs uppercase tracking-widest">Contacto Directo</span>
+                    <h3 class="text-3xl font-bold mt-2 mb-6 tracking-tight">¿Tenés un proyecto en mente? <br>Hagámoslo realidad.</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
+                        Escribinos por WhatsApp o seguinos en nuestras redes sociales para coordinar una visita técnica y armar tu presupuesto completamente sin cargo.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <a href="https://wa.me/5492257509351" target="_blank" class="flex items-center space-x-4 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-xl max-w-xs transition-colors shadow-lg">
+                            <div class="text-2xl"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <p class="text-xs text-emerald-200">Escribinos al WhatsApp</p>
+                                <p class="text-sm font-bold">+54 9 2257 50-9351</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between gap-8">
+                    <div>
+                        <h4 class="text-gray-400 text-xs uppercase tracking-widest font-bold mb-4">Nuestras Redes Sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-amber-500 hover:text-black rounded-xl flex items-center justify-center text-xl transition-all">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-amber-500 hover:text-black rounded-xl flex items-center justify-center text-xl transition-all">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-gray-400 text-xs uppercase tracking-widest font-bold mb-2">Área de Cobertura</h4>
+                        <p class="text-sm text-gray-300"><i class="fa-solid fa-map-location-dot mr-2 text-amber-500"></i> Todo el Partido de la Costa, Buenos Aires.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 LR Construcciones. Todos los derechos reservados.</p>
+                <p class="text-gray-600">Diseñado profesionalmente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentSlide = 0;
+
+            function nextSlide() {
+                // Desvanecer el slide actual
+                slides[currentSlide].classList.remove('opacity-100');
+                slides[currentSlide].classList.add('opacity-0');
+                
+                // Mover al siguiente índice
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Mostrar el nuevo slide con animación suave
+                slides[currentSlide].classList.remove('opacity-0');
+                slides[currentSlide].classList.add('opacity-100');
+            }
+
+            // Temporizador configurado a 3000ms (3 segundos)
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+
+</body>
+</html>
